@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Projetos";
+}
+
+<section class="projects-section">
+    <div class="container">
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="api">APIs</button>
+            <button class="filter-btn" data-filter="microservices">Microsserviços</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="~/images/project1.jpg" alt="Sistema de Gestão">
+                </div>
+                <div class="project-info">
+                    <h3>Sistema de Gestão Empresarial</h3>
+                    <p>ASP.NET Core MVC, Entity Framework, SQL Server</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                        <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="api">
+                <div class="project-image">
+                    <img src="~/images/project2.jpg" alt="API de Pagamentos">
+                </div>
+                <div class="project-info">
+                    <h3>API de Pagamentos</h3>
+                    <p>.NET 6, Dapper, JWT Authentication, Redis</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</section>
