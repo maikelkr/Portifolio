@@ -1,9 +1,10 @@
 ﻿:root {
-    --primary-color: #512bd4;
+    --primary-color: #ae42d4;
+    --line_color: #000000;
     --primary-dark: #3a1d9b;
-    --secondary-color: #2d3748;
+    --secondary-color: #1a202c;
     --light-color: #f7fafc;
-    --light-color-md: #eeeeee;
+    --light-color-md: #bbbfc3;
     --dark-color: #1a202c;
     --gray-color: #e2e8f0;
     --success-color: #48bb78;
@@ -13,11 +14,11 @@
     --font-heading: 'Montserrat', sans-serif;
 }
 .dark-mode {
-    --light-color-md: #121212;
-    --primary-color: #ae42d4;
+    --light-color-md: #0d121a;
+    --line_color: #0d121a;
     --primary-dark: #c582e5;
     --secondary-color: #d2c8b7;
-    --light-color: #080503;
+    --light-color: #1a202c;
     --dark-color: #e5dfd3;
     --gray-color: #1d170f;
     --success-color: #b74487;
@@ -29,7 +30,6 @@
     --primary-transparent: rgba(174, 66, 212, 0.1);
     --secondary-light: #b5aa97;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -105,7 +105,7 @@ input:checked + .slider:before {
     content: '☀️';
     font-size: 12px;
     position: absolute;
-    left: 8px;
+    left: 7px;
     top: 6px;
     opacity: 1;
     transition: .4s;
@@ -113,7 +113,7 @@ input:checked + .slider:before {
 
 input:checked + .slider:after {
     content: '🌙';
-    left: 38px;
+    left: 36px;
 }
 
 
@@ -186,17 +186,16 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     background: linear-gradient(#d2c8b711, #d2c8b711), url('../images/banner.png') no-repeat center center;
     background-size: cover;
-    padding-top: 80px;
+    padding-top: 130px;
     color: white; /* Texto branco para contrastar com fundo escuro */
     text-align: left;
     position: relative;
 }
-
     .hero h1 {
         font-family: var(--font-heading);
         font-size: 3.5rem;
@@ -210,16 +209,9 @@ body {
         margin-bottom: 1rem;
         line-height: 1.2;
     }
-
-    .hero .highlight {
-        color: var(--primary-color);
-    }
-
     .hero .lead {
         font-size: 1.25rem;
         margin-bottom: 2rem;
-        color: var(--primary-color);
-        
     }
 
 /* Buttons */
@@ -374,10 +366,15 @@ h2 {
 
 .social-links {
     margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
 }
 
     .social-links a {
-        color: white;
+        color: var(--dark-color);
         margin: 0 0.5rem;
         font-size: 1.25rem;
         transition: color 0.3s;
@@ -476,7 +473,7 @@ h2 {
     left: 58px;
     height: 100%;
     width: 2px;
-    background: var(--gray-color);
+    background: var(--line_color);
 }
 
 .timeline-item {
@@ -552,6 +549,11 @@ h2 {
     }
 
 /* Contact Page */
+.contact-section {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    margin-top: 3rem;
+}
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
