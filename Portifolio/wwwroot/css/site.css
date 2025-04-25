@@ -4,7 +4,7 @@
     --primary-dark: #3a1d9b;
     --secondary-color: #1a202c;
     --light-color: #f7fafc;
-    --light-color-md: #bbbfc3;
+    --light-color-md: #d9dbdd;
     --dark-color: #1a202c;
     --gray-color: #e2e8f0;
     --success-color: #48bb78;
@@ -280,7 +280,7 @@ h2 {
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.5s, box-shadow 0.3s;
 }
 
     .project-card:hover {
