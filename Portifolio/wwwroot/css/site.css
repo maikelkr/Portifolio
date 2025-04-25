@@ -345,6 +345,7 @@ h2 {
     background: url('../images/typescript.png') no-repeat center center;
 }
 
+
 .tech-item span {
     display: block;
     font-weight: 500;
@@ -410,6 +411,10 @@ h2 {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
+.education-section {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
 .experience-section {
     background-color: var(--light-color);
     color: var(--dark-color);
@@ -435,7 +440,18 @@ h2 {
 .about-text p {
     margin-bottom: 1.5rem;
 }
-
+.timeline-icons {
+    display: flex;
+    align-items: center;
+    
+}
+.timeline-icons i{
+    margin-inline:2px;
+}
+.about-logo {
+    height: 30px;
+    margin-right:2px;
+}
 .skills-list {
     list-style: none;
     margin-bottom: 2rem;
@@ -458,7 +474,33 @@ h2 {
             font-weight: 500;
             color: var(--secondary-color);
         }
+.education {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
 
+.education-item {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.education-content {
+    background: var(--light-color-md);
+    padding: 1.5rem;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+    .education-content h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+    }
+
+    .education-content h4 {
+        color: var(--secondary-color);
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+    }
 /* Timeline */
 .timeline {
     position: relative;
