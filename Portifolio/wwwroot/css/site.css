@@ -12,7 +12,7 @@
     --danger-color: #f56565;
     --font-main: 'Roboto', sans-serif;
     --font-heading: 'Montserrat', sans-serif;
-}
+} 
 .dark-mode {
     --light-color-md: #0d121a;
     --line_color: #0d121a;
@@ -131,6 +131,7 @@ body {
     padding: 0 20px;
 }
 
+
 /* Navbar */
 .navbar {
     background-color: var(--light-color);
@@ -192,7 +193,7 @@ body {
     background: linear-gradient(#d2c8b711, #d2c8b711), url('../images/banner.png') no-repeat center center;
     background-size: cover;
     padding-top: 130px;
-    color: white; /* Texto branco para contrastar com fundo escuro */
+    color: white;
     text-align: left;
     position: relative;
 }
@@ -277,6 +278,7 @@ h2 {
 
 .project-card {
     background: var(--light-color-md);
+    
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -287,11 +289,13 @@ h2 {
         transform: translateY(-5px);
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     }
-
+.project-inline {
+    display: inline-flex;
+}
 .project-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width:30px;
+    display: flex;
+    margin-inline-end:10px;
 }
 
 .project-info {
@@ -318,7 +322,7 @@ h2 {
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -341,10 +345,10 @@ h2 {
     margin-bottom: 1rem;
     color: var(--dark-color);
 }
-.tech-i {
-    background: url('../images/typescript.png') no-repeat center center;
-}
 
+.tech-item img {
+    height: 3rem;
+}
 
 .tech-item span {
     display: block;
@@ -492,16 +496,50 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
     .education-content h3 {
+        
         color: var(--primary-color);
         margin-bottom: 0.25rem;
     }
 
     .education-content h4 {
+        display: inline-flex;
         color: var(--secondary-color);
         margin-bottom: 0.75rem;
         font-weight: 500;
     }
+
+.education-logo {
+    position:absolute;
+    display:inline-flex;
+    height:30px;
+    margin-left:10px;
+    top:55px;
+}
 /* Timeline */
+.image-container {
+    transform: scale(0.9);
+}
+
+.description {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+    white-space: nowrap;
+    color: white;
+    padding: 5px;
+    padding-inline: 10px;
+    display: none;
+}
+
+.image-container:hover .description {
+    display: block;
+}
+
+.image-container:hover .about-logo {
+    transition: transform 0.2s ease-in-out; 
+    transform: scale(1.1);
+}
+
 .timeline {
     position: relative;
     max-width: 800px;
